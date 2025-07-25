@@ -1,12 +1,35 @@
-# React + Vite
+# 🛒 React Shopping Cart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive e-commerce frontend app built with **React**, **Context API**, and **React-Bootstrap**.  
+Users can browse products, search in real-time, manage cart state, and navigate protected routes with local auth handling.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔍 Real-time product search
+- 🛍️ Add/Remove items from cart
+- 📦 Global cart state using `useReducer` + Context API
+- 🧭 Routing with `react-router-dom`
+- 🔐 Login/Signup simulation with `localStorage`
+- 💅 UI built with `React-Bootstrap` & `react-icons`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **React + Vite**
+- **React Context API**
+- **React-Bootstrap**
+- **React Router**
+- **localStorage** (for auth)
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/inshrahmaryam/react-shopping-cart.git
+cd react-shopping-cart
+npm install
+npm run dev
