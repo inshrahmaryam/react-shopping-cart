@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/react-shopping-cart/', // 👈 ADD THIS LINE
+  // base: mode === 'production' ? '/react-shopping-cart/' : '/',
   plugins: [react()],
 })
