@@ -17,7 +17,7 @@ const Cart = () => {
           <div
             key={item.id}
             className="card mb-3 p-3 d-flex flex-row align-items-center"
-            style={{ width: "100%", flexWrap: "wrap" }} // allow wrapping on small screens
+            style={{ width: "100%", flexWrap: "wrap" }}
           >
             <img
               src={item.image}
@@ -27,24 +27,30 @@ const Cart = () => {
                 height: "80px",
                 objectFit: "contain",
                 marginRight: "15px",
-                marginBottom: "10px", // spacing for small screens
+                marginBottom: "10px", // for small screens
               }}
             />
 
-            <div style={{ flex: 1, minWidth: 0 }}>
+            <div style={{ flex: "1 1 auto", minWidth: 0 }}>
               <h5
                 className="cart-title"
                 style={{
-                  whiteSpace: "normal",    // allow text wrapping
-                  wordWrap: "break-word",   // break long words
-                  overflowWrap: "anywhere", // fallback for very long words
+                  whiteSpace: "normal",       // wrap text
+                  wordWrap: "break-word",
+                  overflowWrap: "anywhere",
                   marginBottom: "5px",
                 }}
               >
                 {item.title}
               </h5>
 
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
+              >
                 <p className="mb-0">💲{item.price}</p>
                 <small>Qty: {item.qty || 1}</small>
               </div>
